@@ -1,0 +1,1 @@
+#WAP to take a word and count the 
