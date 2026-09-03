@@ -1,0 +1,9 @@
+
+11. write a python program to take a word and  print every second character]
+
+
+
+11
+word = input("Enter a word: ")
+
+print("Every second character:", word[1::2])
