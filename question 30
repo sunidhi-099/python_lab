@@ -1,0 +1,12 @@
+
+7 write a python program to take a sentence and replace all spaces with underscores
+
+ 
+ 
+
+ 7
+ s = input ("Enter = ")
+ s=s.replace("" "",""__"")
+ print(s)
+
+ 
