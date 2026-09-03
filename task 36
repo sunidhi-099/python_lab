@@ -1,0 +1,15 @@
+13 write a python program to take a string and separate characters present even index positions and odd index positions
+
+s = input("Enter a string: ")
+
+even = ""
+odd = ""
+
+for i in range(len(s)):
+    if i % 2 == 0:
+        even += s[i]
+    else:
+        odd += s[i]
+
+print("Characters at even index positions:", even)
+print("Characters at odd index positions:", odd)
