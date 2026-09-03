@@ -1,0 +1,11 @@
+
+8 write a python program to take a sentence detect double spaces and replace them with single spaces
+
+ 
+ 
+
+ 8
+ s=input("Enter = ")
+s=s.replace("  "," ")
+print(s)
+
