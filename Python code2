@@ -1,0 +1,13 @@
+*write a python program to input a number and check whether it is prime or not a number is prine If 11 g
+has no divisor other than 1 and itself
+...
+#solution:
+number = int (input (Enter the number:"))
+is_prime-True if number ‹- 1: is_prime-True else: for
+1
+in range 2, number):
+numi == e:
+is is_prime- False break
+Lif is prime: print ("Prime")
+else:
+print("Not prime")
