@@ -1,0 +1,35 @@
+task11 >
+@ q3.py >
+•write a python program that ask the user to enter a username and password. the user should get 3 attempt. if the correct credentails and entered, display "Login sucessfully" and stop the loop. if all attempt are used, display "Account Locked"
+5
+L9
+#solution: username -
+"admin"
+password - "12345"
+attempt - 3
+10
+while
+attempt > 0:
+11
+user - input("Enter username: ")
+12
+pas - input("Enter password: ")
+13
+14
+15
+16
+17
+18
+19
+20
+21
+if user - username and pas = password:
+print("Login successfully")
+break
+else:
+attempt - attempt - 1
+print("Wrong username or password")
+if
+attempt - e:
+print "Account Locked")
+I
