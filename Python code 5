@@ -1,0 +1,25 @@
+Write a python program to print number from 1 te 50, but skip all number disable by 4.
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+write a python program to repeated calculate the sum of digit of a a number util
+the result become a single digit.
+#solution:
+num - int(input("Enter a number: "))
+rev =e
+while• num->•e:
+digit - num-% 10
+rev - rev.*.10+ digit
+num = num-//-10
+print"Reverse -", rev)
