@@ -1,0 +1,14 @@
+-in bin functn progran to input a decimal nuber and neverse it ushe the buste
+#solution:
+num = int (input ("Enter a decimal number: "))
+binary - bin(num)
+print("Binary =", binary)
+without binary fun
+num - int(input("Enter a decimal number: ")
+binary•m
+while num > 0:
+rem = num % 2
+binary - strrem) + binary
+num = num // 2
+print"Binary =", binary)
+Ln 21, Col 19
