@@ -1,0 +1,11 @@
+ques 9 write a python program to input two lists  and create a third list containing common elements'''
+list1 = list(map(int, input("Enter first list elements: ").split()))
+list2 = list(map(int, input("Enter second list elements: ").split()))
+
+common = []
+
+for i in list1:
+    if i in list2:
+        common.append(i)
+
+print("Common elements:", common)'''
