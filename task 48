@@ -1,0 +1,11 @@
+ques 2 write a python program to input marks of 10 students. store valid marks between 0 and 100 in a list . skip invalid marks'''
+
+'''marks = []
+
+for i in range(10):
+    m = float(input("Enter marks: "))
+
+    if 0 <= m <= 100:
+        marks.append(m)
+
+print("Valid marks are:", marks)'''
