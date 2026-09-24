@@ -1,0 +1,17 @@
+ques 7
+write a python program  to store multiple student records as a list of tuples .  each tuple should contain name, roll number, and marks. display students who scored above 75'''
+students = [
+    ("Rahul", 101, 85),
+    ("Anjali", 102, 72),
+    ("Aman", 103, 90),
+    ("Priya", 104, 65),
+    ("Riya", 105, 78)
+]
+print("Students who scored above 75:")
+
+for student in students:
+    if student[2] > 75:
+        print("Name:", student[0])
+        print("Roll Number:", student[1])
+        print("Marks:", student[2])
+        print()
