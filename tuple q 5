@@ -1,0 +1,10 @@
+t = (10, 20, 30, 40, 50)
+
+
+value = int(input("Enter a value: "))
+
+
+if value in t:
+    print("Value is present at position:", t.index(value))
+else:
+    print("Value is not present in the tuple")'''
