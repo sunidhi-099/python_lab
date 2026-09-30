@@ -1,0 +1,37 @@
+n = int(input("Enter number of seats: "))
+
+seats = []
+print("Enter seat status (0 = available, 1 = booked):")
+
+for i in range(n):
+    status = int(input(f"Seat {i + 1}: "))
+    
+    while status != 0 and status != 1:
+        print("Invalid status! Enter only 0 or 1.")
+        status = int(input(f"Seat {i + 1}: "))
+    
+    seats.append(status)
+
+group = int(input("Enter group size: "))
+
+# Find the first consecutive block
+start = -1
+
+for i in range(n - group + 1):
+    if all(seats[i + j] == 0 for j in range(group)):
+        start = i
+        break
+
+if start != -1:
+    # Allocate seats
+    allocated = tuple(range(start + 1, start + group + 1))
+
+    for i in range(start, start + group):
+        seats[i] = 1
+
+    print("Allocated seats:", allocated)
+    print("Updated seats:", seats)
+
+else:
+    print("Consecutive seats not available")
+    print("Seats:", seats)
