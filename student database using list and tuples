@@ -1,0 +1,29 @@
+db = []
+
+n = int(input("Number of students: "))
+
+for i in range(n):
+    roll = int(input("Roll: "))
+
+    while any(s[0] == roll for s in db):
+        print("Roll already exists")
+        roll = int(input("Roll: "))
+
+    name = input("Name: ")
+    branch = input("Branch: ")
+    cgpa = float(input("CGPA: "))
+
+    db.append((roll, name, branch, cgpa))
+
+print("\nDatabase:")
+for s in db:
+    print(s)
+
+x = int(input("Search roll: "))
+
+for s in db:
+    if s[0] == x:
+        print("Found:", s)
+        break
+else:
+    print("Student not found")
