@@ -1,0 +1,30 @@
+students = []
+
+n = int(input("Number of students: "))
+
+for i in range(n):
+    roll = int(input("Roll: "))
+
+    while any(s["roll"] == roll for s in students):
+        print("Roll already exists")
+        roll = int(input("Roll: "))
+
+    name = input("Name: ")
+    branch = input("Branch: ")
+    marks = float(input("Marks: "))
+
+    students.append({
+        "roll": roll,
+        "name": name,
+        "branch": branch,
+        "marks": marks
+    })
+
+x = int(input("Search roll: "))
+
+for s in students:
+    if s["roll"] == x:
+        print(s)
+        break
+else:
+    print("Student not found")
