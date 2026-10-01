@@ -1,0 +1,12 @@
+r = int(input("Rows: "))
+c = int(input("Columns: "))
+
+m = [list(map(int, input().split())) for i in range(r)]
+
+k = int(input("Enter k: "))
+
+for i in range(k-1, r, k):
+    m[i].reverse()
+
+for row in m:
+    print(row)
