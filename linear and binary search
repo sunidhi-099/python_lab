@@ -1,0 +1,25 @@
+a = list(map(int, input("Enter numbers: ").split()))
+x = int(input("Search: "))
+
+# Linear Search
+if x in a:
+    print("Linear Search: Found")
+else:
+    print("Linear Search: Not Found")
+
+# Binary Search
+a.sort()
+low, high = 0, len(a)-1
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if a[mid] == x:
+        print("Binary Search: Found")
+        break
+    elif x < a[mid]:
+        high = mid - 1
+    else:
+        low = mid + 1
+else:
+    print("Binary Search: Not Found")
